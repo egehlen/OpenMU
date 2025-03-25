@@ -1,0 +1,40 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.3.3 Safari/537.36" version="26.1.1">
+  <diagram name="Page-1" id="r7LBNisByQ-ZloWg2ccM">
+    <mxGraphModel dx="958" dy="699" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.1" pageWidth="2000" pageHeight="2000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="66eFTCOGHsPzeOX6X24B-1" value="Client" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="66eFTCOGHsPzeOX6X24B-2" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.patternFillRect;fillStyle=diag;step=5;fillStrokeWidth=0.2;fillStrokeColor=#dddddd;" vertex="1" parent="1">
+          <mxGeometry x="880" y="160" width="440" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="66eFTCOGHsPzeOX6X24B-3" value="Proxy (nginx)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="175" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="66eFTCOGHsPzeOX6X24B-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="66eFTCOGHsPzeOX6X24B-1" target="66eFTCOGHsPzeOX6X24B-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="66eFTCOGHsPzeOX6X24B-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Identity Service&lt;br&gt;&lt;/font&gt;&lt;/b&gt;(KeyCloak)&lt;br&gt;&lt;br&gt;Handles authorization and authentication" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="320" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="66eFTCOGHsPzeOX6X24B-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Account Service&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Handles account,&lt;div&gt;chars, stats, etc&lt;/div&gt;" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="960" y="320" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="66eFTCOGHsPzeOX6X24B-7" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Gameplay Service&lt;br&gt;&lt;/font&gt;&lt;/b&gt;(real-time UDP)&lt;br&gt;&lt;br&gt;Handle map partitions, player positioning and stats and other players replication" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="320" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="66eFTCOGHsPzeOX6X24B-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=70;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="66eFTCOGHsPzeOX6X24B-2" target="66eFTCOGHsPzeOX6X24B-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="66eFTCOGHsPzeOX6X24B-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=70;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="66eFTCOGHsPzeOX6X24B-2" target="66eFTCOGHsPzeOX6X24B-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="66eFTCOGHsPzeOX6X24B-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=70;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="66eFTCOGHsPzeOX6X24B-2" target="66eFTCOGHsPzeOX6X24B-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
